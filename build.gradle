@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.devops'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
